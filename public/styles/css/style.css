@@ -13,6 +13,7 @@ html, body {
   height: 100%;
   text-align: justify;
   font-family: "Space Mono", monospace;
+  overflow: hidden;
 }
 html ::-webkit-scrollbar, body ::-webkit-scrollbar {
   width: 0.5rem;
@@ -73,6 +74,21 @@ textarea::placeholder {
   }
 }
 
+h1 {
+  padding-block: 0.5rem;
+}
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h2 {
+    font-size: 1.1rem;
+  }
+}
+
 #imageGeneration {
   display: flex;
   flex-direction: column;
@@ -91,6 +107,13 @@ textarea::placeholder {
   justify-content: center;
   align-items: center;
   height: 50vh;
+  padding: 1rem;
+}
+@media only screen and (max-width: 800px) {
+  #imageGeneration form {
+    height: 100%;
+    padding-block: 2rem;
+  }
 }
 #imageGeneration form button {
   font-size: 1rem;
@@ -99,6 +122,14 @@ textarea::placeholder {
   border-radius: 0.5rem;
   font-weight: bolder;
   border: 1px solid #0e5267;
+}
+@media only screen and (max-width: 800px) {
+  #imageGeneration form button {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0.8rem 0.5rem;
+  }
 }
 #imageGeneration form .header {
   background-color: #0e5267;
@@ -116,6 +147,7 @@ textarea::placeholder {
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  overflow-x: scroll;
 }
 #imageGeneration .image--container img {
   border-radius: 0.5rem;

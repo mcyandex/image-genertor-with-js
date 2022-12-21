@@ -18,7 +18,7 @@ html, body{
     height: 100%;
     text-align: justify;
     font-family: 'Space Mono', monospace;
-    // overflow: hidden;
+    overflow: hidden;
 
     ::-webkit-scrollbar{
         // display: none;
@@ -75,6 +75,20 @@ button, input[type=submit]{
     }
 }
 
+h1{
+    padding-block: 0.5rem;
+
+    @include mobile{
+        font-size: 1.8rem;
+    }
+}
+
+h2{
+    @include mobile{
+        font-size: 1.1rem;
+    }
+}
+
 #imageGeneration{
     @include flex-col;
     width: 100%;
@@ -85,6 +99,12 @@ button, input[type=submit]{
         width: 100%;
         @include flex-col;
         height: 50vh;
+        padding: 1rem;
+
+        @include mobile{
+            height: 100%;
+            padding-block: 2rem;
+        }
 
         button{
             font-size: 1rem;
@@ -93,6 +113,11 @@ button, input[type=submit]{
             border-radius: 0.5rem;
             font-weight: bolder;
             border: 1px solid $primary;
+
+            @include mobile{
+                width: max-content;
+                padding: 0.8rem 0.5rem;
+            }
         }
 
         .header{
@@ -109,6 +134,7 @@ button, input[type=submit]{
         min-height: 50vh;
         background-color: $default;
         @include flex-col;
+        overflow-x: scroll;
         
         img{
             border-radius: 0.5rem;
