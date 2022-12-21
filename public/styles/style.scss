@@ -1,0 +1,102 @@
+@import './variables.scss';
+@import './mixins';
+
+
+// reset all to 0
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    transition: all 300ms
+}
+
+html, body{
+    border: none;
+    line-height: 1.3;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    // overflow: hidden;
+
+    ::-webkit-scrollbar{
+        // display: none;
+        width: 0.5rem;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        // border: 1px solid $secondary;
+        border-radius: 0.3rem;
+        background-color: $primary;
+    }
+
+    ::-webkit-scrollbar-track{
+        box-shadow: inset 0 0 2px $default;
+    }
+}
+
+
+input, 
+select,  
+textarea{
+    width: 50%;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 1px solid $primary;
+    border-radius: 0.5rem;
+    color: $dark;
+    caret-color: $dark;
+    resize: none;
+    
+    &:hover{
+        border: 1px solid $primary;
+    }
+
+    @include mobile(){
+        width: 100%;
+        font-size: 16px;
+        padding: 0.5rem;
+
+        &::placeholder{
+            font-size: 14px;
+        }
+    }
+}
+
+button, input[type=submit]{
+    @include mobile(){
+        font-weight: 100;
+        -webkit-border-radius:0;
+        -webkit-appearance: none; 
+    }
+}
+
+#imageGeneration{
+    @include flex-col;
+    width: 100%;
+    justify-content: flex-start;
+    
+    form{
+        background-color: $primary;
+        width: 100%;
+        @include flex-col;
+        height: 50vh;
+
+        button{
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-weight: bolder;
+        }
+    }
+
+    .image--container{
+        width: 100%;
+        background-color: $default;
+        @include flex-col;
+        
+        img{
+            border-radius: 0.5rem;
+        }
+    }
+}

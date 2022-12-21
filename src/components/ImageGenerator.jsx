@@ -59,8 +59,8 @@ export const ImageGenerator = () => {
 
 
   return (
-    <div>
-        <div id='controllers'>
+    <div id='imageGeneration'>
+        <form id='controllers'>
             <input 
             type="text" 
             name='prompt'
@@ -68,15 +68,15 @@ export const ImageGenerator = () => {
             value={prompt}
             onChange={handleChange}
             />
-            <select name="size" defaultValue="Select Image Size" onChange={handleChange} >
-                <option defaultValue="" value="Select Image Size" disabled>Select Size</option>
+            <select name="size" defaultValue="Select Image Size" onChange={handleChange} required>
+                <option defaultValue="" value="Select Image Size" disabled>Select Image Size</option>
                 <option value="256x256">Small</option>
                 <option value="512x512">Medium</option>
                 <option value="1024x1024">Large</option>
             </select>
             <button type='button' onClick={generateImage}>GENERATE IMAGE</button>
-        </div>
-        <div id='image'>
+        </form>
+        <div className='image--container'>
             <img src={imageURL} alt={prompt} />
         </div>
     </div>
