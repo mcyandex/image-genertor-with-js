@@ -37,7 +37,11 @@ export const ImageGenerator = () => {
     
     
     // image generator func
-    const generateImage = async () => {
+    const generateImage = async (e) => {
+        e.preventDefault()
+        if(size === ""){
+            return alert('Select a size pls!')
+        }
         setLoading(true)
         try{
             const response = await openai.createImage({
@@ -53,20 +57,17 @@ export const ImageGenerator = () => {
         }
     }
 
-    if(loading){
-        return <MoonLoader />
-    }
-
 
   return (
     <div id='imageGeneration'>
-        <form id='controllers'>
+        <form id='controllers' onSubmit={generateImage}>
             <input 
             type="text" 
             name='prompt'
             placeholder='type image detail'
             value={prompt}
             onChange={handleChange}
+            required
             />
             <select name="size" defaultValue="Select Image Size" onChange={handleChange} required>
                 <option defaultValue="" value="Select Image Size" disabled>Select Image Size</option>
@@ -74,10 +75,13 @@ export const ImageGenerator = () => {
                 <option value="512x512">Medium</option>
                 <option value="1024x1024">Large</option>
             </select>
-            <button type='button' onClick={generateImage}>GENERATE IMAGE</button>
+            <button type='submit'>GENERATE IMAGE</button>
         </form>
         <div className='image--container'>
-            <img src={imageURL} alt={prompt} />
+            {loading ? <MoonLoader /> 
+            : 
+            <img src={imageURL} alt="" />
+            }
         </div>
     </div>
   )
