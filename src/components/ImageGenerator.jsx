@@ -60,9 +60,11 @@ export const ImageGenerator = () => {
 
   return (
     <div id='imageGeneration'>
-        <h1>Image 2 Text Generator</h1>
-        <h2>Enter Image Description</h2>
         <form id='controllers' onSubmit={generateImage}>
+            <div className='header'>
+                <h1>Image 2 Text Generator</h1>
+                <h2><i>Enter Image Description</i></h2>
+            </div>
             <input 
             type="text" 
             name='prompt'

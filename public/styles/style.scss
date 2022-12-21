@@ -67,6 +67,7 @@ textarea{
 }
 
 button, input[type=submit]{
+
     @include mobile(){
         font-weight: 100;
         -webkit-border-radius:0;
@@ -86,9 +87,20 @@ button, input[type=submit]{
         height: 50vh;
 
         button{
+            font-size: 1rem;
+            color: $primary;
             padding: 1rem;
             border-radius: 0.5rem;
             font-weight: bolder;
+            border: 1px solid $primary;
+        }
+
+        .header{
+            background-color: $primary;
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            color: $default;
         }
     }
 
@@ -103,4 +115,6 @@ button, input[type=submit]{
             border: 1px solid $primary;
         }
     }
+
+    
 }

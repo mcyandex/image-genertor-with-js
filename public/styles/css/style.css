@@ -93,9 +93,19 @@ textarea::placeholder {
   height: 50vh;
 }
 #imageGeneration form button {
+  font-size: 1rem;
+  color: #0e5267;
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: bolder;
+  border: 1px solid #0e5267;
+}
+#imageGeneration form .header {
+  background-color: #0e5267;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
 }
 #imageGeneration .image--container {
   width: 100%;
