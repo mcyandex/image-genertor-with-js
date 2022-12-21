@@ -13,7 +13,6 @@ html, body {
   height: 100%;
   text-align: justify;
   font-family: "Space Mono", monospace;
-  overflow: hidden;
 }
 html ::-webkit-scrollbar, body ::-webkit-scrollbar {
   width: 0.5rem;
@@ -108,6 +107,7 @@ h1 {
   align-items: center;
   height: 50vh;
   padding: 1rem;
+  overflow: hidden;
 }
 @media only screen and (max-width: 800px) {
   #imageGeneration form {
@@ -147,7 +147,7 @@ h1 {
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  overflow-x: scroll;
+  overflow: scroll;
 }
 #imageGeneration .image--container img {
   border-radius: 0.5rem;

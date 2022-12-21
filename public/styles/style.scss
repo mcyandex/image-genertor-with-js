@@ -18,7 +18,7 @@ html, body{
     height: 100%;
     text-align: justify;
     font-family: 'Space Mono', monospace;
-    overflow: hidden;
+    // overflow-x: hidden;
 
     ::-webkit-scrollbar{
         // display: none;
@@ -100,6 +100,7 @@ h2{
         @include flex-col;
         height: 50vh;
         padding: 1rem;
+        overflow: hidden;
 
         @include mobile{
             height: 100%;
@@ -134,7 +135,7 @@ h2{
         min-height: 50vh;
         background-color: $default;
         @include flex-col;
-        overflow-x: scroll;
+        overflow: scroll;
         
         img{
             border-radius: 0.5rem;
