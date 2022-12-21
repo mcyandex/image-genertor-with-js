@@ -1,0 +1,30 @@
+header{
+    background-color: $primary;
+    height: 100vh;
+    @include flex-col;
+    color: $default;
+
+
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    button{
+        background-color: $default;
+        padding: 1rem 1.5rem;
+        
+        &:hover{
+            background-color: $primary;
+            border: 1px solid $default;
+            color: $default;
+        }
+    }
+}
