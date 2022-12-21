@@ -62,7 +62,8 @@ export const ImageGenerator = () => {
     <div id='imageGeneration'>
         <form id='controllers' onSubmit={generateImage}>
             <div className='header'>
-                <h1>Image 2 Text Generator</h1>
+                <h1>Image Generator</h1>
+                <h2>Text 2 Image</h2>
                 <h2><i>Enter Image Description</i></h2>
             </div>
             <input 
