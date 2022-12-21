@@ -97,6 +97,7 @@ textarea::placeholder {
 }
 #imageGeneration .image--container {
   width: 100%;
+  min-height: 50vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -106,4 +107,5 @@ textarea::placeholder {
 }
 #imageGeneration .image--container img {
   border-radius: 0.5rem;
+  border: 1px solid #0e5267;
 }/*# sourceMappingURL=style.css.map */

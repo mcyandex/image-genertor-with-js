@@ -92,11 +92,13 @@ button, input[type=submit]{
 
     .image--container{
         width: 100%;
+        min-height: 50vh;
         background-color: $default;
         @include flex-col;
         
         img{
             border-radius: 0.5rem;
+            border: 1px solid $primary;
         }
     }
 }
