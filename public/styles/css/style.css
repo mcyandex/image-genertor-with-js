@@ -246,7 +246,7 @@ h2 {
     padding-block: 2rem;
   }
 }
-#imageGeneration form button {
+#imageGeneration form button, #imageGeneration form a {
   font-size: 1rem;
   color: #0e5267;
   padding: 1rem;
@@ -254,9 +254,10 @@ h2 {
   font-weight: bold;
   border: 1px solid #0e5267;
   background-color: #fff;
+  text-decoration: none;
 }
 @media only screen and (max-width: 800px) {
-  #imageGeneration form button {
+  #imageGeneration form button, #imageGeneration form a {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;

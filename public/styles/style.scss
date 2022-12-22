@@ -115,7 +115,7 @@ h2{
             padding-block: 2rem;
         }
 
-        button{
+        button, a{
             font-size: 1rem;
             color: $primary;
             padding: 1rem;
@@ -123,6 +123,7 @@ h2{
             font-weight: bold;
             border: 1px solid $primary;
             background-color: $default;
+            text-decoration: none;
 
             @include mobile{
                 width: max-content;
