@@ -89,6 +89,7 @@ nav ul {
   }
 }
 nav ul li, nav ul button, nav ul a {
+  color: #0e5267;
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
