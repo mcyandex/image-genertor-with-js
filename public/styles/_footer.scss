@@ -3,4 +3,10 @@ footer{
     color: $default;
     text-align: center;
     padding: 0.5rem;
+
+    p{
+        @include mobile{
+            font-size: 0.8rem;
+        }
+    }
 }
