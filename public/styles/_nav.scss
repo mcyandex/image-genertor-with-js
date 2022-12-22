@@ -1,10 +1,19 @@
 nav{
     padding: 1rem;
 
+    @include mobile{
+        padding: 0.5rem;
+    }
+
     ul{
         @include flex-row;
         gap: 2rem;
         list-style-type: none;
+
+        @include mobile{
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
 
         li,a{
             font-size: 1.2rem;
@@ -16,12 +25,21 @@ nav{
             &:hover{
                 text-decoration: underline;
             }
+
+            @include mobile{
+                font-size: 0.9rem;
+                font-weight: normal;
+            }
         }
 
         button{
             @extend li;
             font-size: 1rem;
             border-radius: 0.5rem;
+
+            @include mobile{
+                font-size: 0.9rem;
+            }
 
             &:hover{
                 text-decoration: none;
