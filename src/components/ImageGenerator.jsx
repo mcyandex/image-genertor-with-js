@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Configuration, OpenAIApi } from 'openai';
 import { MoonLoader } from 'react-spinners';
+import { Footer } from './Footer';
 
 export const ImageGenerator = () => {
     // OpenAI configuration
@@ -63,13 +64,13 @@ export const ImageGenerator = () => {
         <form id='controllers' onSubmit={generateImage}>
             <div className='header'>
                 <h1>Image Generator</h1>
-                <h2>Text 2 Image</h2>
-                <h2><i>Enter Image Description</i></h2>
+                <h2>Text-2-Image</h2>
+                <h4><i>Enter Image Description</i></h4>
             </div>
             <input 
             type="text" 
             name='prompt'
-            placeholder='e.g: A dancing Cat'
+            placeholder='e.g: a dancing cat'
             value={prompt}
             onChange={handleChange}
             required
@@ -80,7 +81,7 @@ export const ImageGenerator = () => {
                 <option value="512x512">Medium</option>
                 <option value="1024x1024">Large</option>
             </select>
-            <button type='submit'>GENERATE IMAGE</button>
+            <button type='submit'>Generate Image</button>
         </form>
         <div className='image--container'>
             {loading ? <MoonLoader /> 
