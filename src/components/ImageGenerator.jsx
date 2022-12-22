@@ -70,7 +70,7 @@ export const ImageGenerator = () => {
             <input 
             type="text" 
             name='prompt'
-            placeholder='e.g: a dancing cat'
+            placeholder='e.g: a cat holding a mic and singing'
             value={prompt}
             onChange={handleChange}
             required
