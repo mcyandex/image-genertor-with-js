@@ -1,11 +1,17 @@
 import React from "react";
-import { ImageGenerator } from "./components/ImageGenerator";
+import { BrowserRouter } from "react-router-dom";
+import { Home } from "./components/Home";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <>
-      <ImageGenerator />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
