@@ -37,6 +37,8 @@ nav{
             @extend li;
             font-size: 1rem;
             border-radius: 0.5rem;
+            padding-block: 0.5rem;
+            color: $default;
 
             @include mobile{
                 font-size: 0.9rem;

@@ -108,6 +108,8 @@ nav ul li:hover, nav ul button:hover, nav ul a:hover {
 nav ul button {
   font-size: 1rem;
   border-radius: 0.5rem;
+  padding-block: 0.5rem;
+  color: #fff;
 }
 @media only screen and (max-width: 800px) {
   nav ul button {
