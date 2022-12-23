@@ -6,7 +6,7 @@ export const ErrorPage = () => {
     <div>
         <h1 style={{textAlign: "center", height: "100vh"}}>
           Page does not exist!
-          <button><Link to="/">Back to Home</Link></button>
+          <button style={{color: "#fff"}}><Link to="/" style={{color: "#fff"}}>Back to Home</Link></button>
         </h1>
     </div>
   )
