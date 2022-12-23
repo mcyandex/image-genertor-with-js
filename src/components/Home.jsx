@@ -12,7 +12,9 @@ export const Home = () => {
         <h2>- AI Image Generator -</h2>
         <h3>Easily create realistic Images by just entering a description.</h3>
         <br />
-        <button><Link to="/image-generator">TRY NOW!</Link></button>
+        <button>
+          <Link to="/image-generator">TRY NOW!</Link>
+        </button>
     </header>
     </>
   )
