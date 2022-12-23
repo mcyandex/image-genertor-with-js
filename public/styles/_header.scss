@@ -33,12 +33,13 @@ header{
         }
     }
 
-    button{
+    button,a{
         background-color: $default;
         font-size: 1.2rem;
         font-weight: bold;
         color: $primary;
         padding: 1rem 1.5rem;
+        text-decoration: none;
         
         &:hover{
             background-color: $primary;

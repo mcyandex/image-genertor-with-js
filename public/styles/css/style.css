@@ -46,20 +46,21 @@ header h3 {
     font-size: 0.9rem;
   }
 }
-header button {
+header button, header a {
   background-color: #fff;
   font-size: 1.2rem;
   font-weight: bold;
   color: #0e5267;
   padding: 1rem 1.5rem;
+  text-decoration: none;
 }
-header button:hover {
+header button:hover, header a:hover {
   background-color: #0e5267;
   border: 1px solid #fff;
   color: #fff;
 }
 @media only screen and (max-width: 800px) {
-  header button {
+  header button, header a {
     padding: 1rem;
     font-size: 1rem;
   }
